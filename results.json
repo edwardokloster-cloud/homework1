@@ -1,0 +1,52 @@
+{
+    "model": "PyTorch 1D-CNN",
+    "loss_function": "Weighted CrossEntropyLoss",
+    "optimizer": "AdamW",
+    "num_samples": 100000,
+    "signal_length": 205,
+    "num_classes": 4,
+    "train_size": 80000,
+    "test_size": 20000,
+    "accuracy": 0.9778,
+    "macro_f1": 0.9407392177117115,
+    "loss": 0.11995782995224,
+    "confusion_matrix": [
+        [
+            12533,
+            249,
+            59,
+            25
+        ],
+        [
+            61,
+            649,
+            2,
+            0
+        ],
+        [
+            28,
+            6,
+            2803,
+            3
+        ],
+        [
+            6,
+            0,
+            5,
+            3571
+        ]
+    ],
+    "class_distribution": {
+        "0": 64327,
+        "1": 3562,
+        "2": 14199,
+        "3": 17912
+    },
+    "epochs": 20,
+    "batch_size": 256,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "dropout": 0.3,
+    "seed": 42,
+    "device": "cuda"
+}
